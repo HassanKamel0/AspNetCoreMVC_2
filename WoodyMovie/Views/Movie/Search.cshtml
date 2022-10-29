@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Movie>
+@inject IViewLocalizer localizer
+@{
+	ViewData["Title"] = "Search result";
+}
+<div class="container">
+	<form method="post" asp-controller="Movie" asp-action="Search" enctype="multipart/form-data">
+		<div class="form-group input-group input-group-lg mb-3 pt-2 col-md-6 ">
+			<input type="text" class="form-control" placeholder="@localizer["Search"]">
+			<button class="btn btn-secondary" type="submit">@localizer["Search"]</button>
+		</div>
+	</form>
+</div>
+
+<h1>Results</h1>
+<hr/>
+<div class="row pb-3">
+	@foreach (var movie in Model)
+	{
+		<div class="col-lg-3 col-md-6">
+			<div class="row p-2">
+				<p class="card-title h5 pb-1"><b style="text-shadow: 1px 1px 6px gray; color:white">@movie.Name</b></p>
+				<div class="col-12 p-1 movie" style="border-radius:5px; ">
+					<div class="card" style="box-shadow: 1px 1px 5px">
+						<img src="@movie.ImageUrl" class="card-img-top rounded" />
+						@*<div class="card-body">
+					<div class="pl-1">
+					<p class="card-title text-info">@movie.Category</p>
+					</div>
+					<div class="pl-1">
+					<p> @Math.Round(movie.MovieSize/1000) Gb</p>
+					</div>
+					<div class="pl-1">
+					<p> Released on @movie.CreatedDate</p>
+					</div>
+					<div>
+					<p> Downloads: @movie.DownloadCount</p>
+					</div>
+					</div>   *@
+					</div>
+				</div>
+
+			</div>
+		</div>
+	}
+</div>
+<div class="text-center">
+	@if (ViewBag.CurrentPage - 1 > 0)
+	{
+		<a class="btn btn-outline-primary btn-lg" href="/?RequiredPage=@(ViewBag.CurrentPage-1)">@localizer["Previous"]</a>
+	}
+	@if (ViewBag.CurrentPage + 1 <= ViewBag.PagesCount)
+	{
+		<a class="btn btn-outline-primary btn-lg" href="/?RequiredPage=@(ViewBag.CurrentPage+1)">@localizer["Next"]</a>
+	}
+</div>

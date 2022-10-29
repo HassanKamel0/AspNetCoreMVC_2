@@ -1,0 +1,17 @@
+﻿body[dir=rtl], h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aref Ruqaa', serif !important;
+}
+div .card-title {
+    text-align: center;
+}
+.mu-navbar .navbar-brand {
+    padding-left: 160px;
+    padding-right: 0px; 
+}
+.container .navbar .woodybrand {
+    margin-right: -110px !important;
+}
+
+.navbar-collapse ul .nav-item a {
+    font-size: 17px !important;
+}

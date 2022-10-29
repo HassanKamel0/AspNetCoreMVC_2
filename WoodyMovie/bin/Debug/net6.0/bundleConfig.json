@@ -1,0 +1,33 @@
+[
+  {
+    "outputFileName": "wwwroot/css/assets.min.css",
+    "inputFiles": [
+      "wwwroot/assets/css/slick.css",
+      "wwwroot/assets/css/magnific-popup.css",
+      "wwwroot/assets/css/style.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/app.rtl.min.css",
+    "inputFiles": [
+      "wwwroot/assets/css/app.rtl.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/all.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/slick.min.js",
+      "wwwroot/assets/js/custom.js",
+      "wwwroot/assets/js/app.js",
+      "wwwroot/assets/js/counter.js",
+      "wwwroot/assets/js/jquery.magnific-popup.min.js",
+      "wwwroot/assets/js/jquery.filterizr.min.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  }
+]

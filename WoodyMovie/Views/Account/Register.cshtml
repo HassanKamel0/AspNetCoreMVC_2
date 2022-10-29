@@ -1,0 +1,78 @@
+﻿@model WoodyMovie.Models.Register
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Register"];
+}
+	<main>
+		<section id="mu-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-contact-area">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="mu-title">
+										<h2>@Localizer["Register"]</h2>
+									</div>
+								</div>
+							</div>
+							<div class="mu-contact-content">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="mu-contact-form-area">
+											<div id="form-messages"></div>
+											<form id="contact" method="post" class="mu-contact-form" asp-action="Register">
+												<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+												<div class="form-group">  
+													<span class="fa fa-envelope mu-contact-icon"></span>              
+													<input type="email" asp-for="Email" class="form-control" placeholder="@Localizer["Email"]" id="email" name="email" required>
+													<span asp-validation-for="Email" class="text-danger"></span>
+												</div>    
+												<div class="form-group">
+													<span><i class="fa-thin fa-user"></i></span>
+													<input type="text" asp-for="FirstName" class="form-control" placeholder="@Localizer["FirstName"]" id="firstName" name="firstName" required>
+													<span asp-validation-for="FirstName" class="text-danger"></span>
+												</div>
+												<div class="form-group">  
+													<span><i class="fa-thin fa-user"></i></span>
+													<input type="text" asp-for="LastName" class="form-control" placeholder="@Localizer["LastName"]" id="lastName" name="lastName" required>
+													<span asp-validation-for="LastName" class="text-danger"></span>
+												</div>  
+												<div class="form-group"> 
+													<span class="fa fa-folder-open-o mu-contact-icon"></span>                
+													<input type="password" asp-for="Password" class="form-control" placeholder="@Localizer["Password"]" id="Password" name="Password" required>
+													<span asp-validation-for="Password" class="text-danger"></span>
+												</div>
+												<div class="form-group"> 
+													<span class="fa fa-folder-open-o mu-contact-icon"></span>                
+													<input type="password" asp-for="ConfirmPassword" class="form-control" placeholder="@Localizer["ConfirmPassword"]" id="ConfirmPassword" name="ConfirmPassword" required>
+													<span asp-validation-for="Password" class="text-danger"></span>
+												</div>
+												<div class="form-group">  
+													<span class="fa fa-envelope mu-contact-icon"></span>              
+													<input asp-for="Age" class="form-control" placeholder="@Localizer["Age"]" id="Age" name="Age" required>
+													<span asp-validation-for="Age" class="text-danger"></span>
+												</div>  
+												<div class="form-group">  
+													<span class="bi bi-phone mu-contact-icon"></span>              
+													<input asp-for="PhoneNumber" class="form-control" placeholder="@Localizer["PhoneNumber"]" id="PhoneNumber" name="PhoneNumber" required>
+													<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+												</div>  
+												<button type="submit" class="mu-send-msg-btn"><span>@Localizer["Register"]</span></button>
+												<a class="mu-send-msg-btn" asp-controller="Home" asp-action="Index">@Localizer["Back"]</a>
+								        	</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

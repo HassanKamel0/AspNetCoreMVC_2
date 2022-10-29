@@ -1,0 +1,55 @@
+﻿@model WoodyMovie.Models.Movie
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+	<input asp-for="@Model.Id" hidden />
+	<input asp-for="@Model.ImageUrl" hidden />
+	<h1 class="text-primary pt-2">@(Model.Id!=0?"Update":"Create") Movie</h1>
+
+	<div class="row">
+		<div class="col-4">
+			<hr />
+			<div class="row">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="form-group">
+					<label asp-for="@Model.Name" class="control-label"></label>
+					<input asp-for="@Model.Name" class="form-control" />
+					<span asp-validation-for="Name" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="@Model.ImageUrl" class="control-label">Upload Image</label>
+					<input type="file" name="file" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label asp-for="@Model.MovieSize" class="control-label"></label>
+					<input asp-for="@Model.MovieSize" class="form-control"/>
+					<span asp-validation-for="@Model.MovieSize" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="@Model.Category" class="control-label"></label>
+					<input asp-for="@Model.Category" class="form-control" />
+					<span asp-validation-for="@Model.Category" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="@Model.CreatedDate" class="control-label"></label>
+					<input asp-for="@Model.CreatedDate" class="form-control" />
+					<span asp-validation-for="@Model.CreatedDate" class="text-danger"></span>
+				</div>
+				<div class="form-group pt-2">
+					<button type="submit" class="btn btn-primary">@(Model.Id!=0?"Update":"Create")</button>
+					<a asp-action="Index" class="btn btn-secondary">Back To List</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<img src="@Html.DisplayFor(model => model.ImageUrl)" width="70%"/>
+		</div>
+	</div>
+</form>
+
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+		<partial name="_ValidationScriptsPartial"></partial>
+		//don't hit the database unless the data is valid
+	}
+	}
