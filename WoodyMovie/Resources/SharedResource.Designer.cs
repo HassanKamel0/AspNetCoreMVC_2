@@ -61,6 +61,42 @@ namespace WoodyMovie.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password added Successfully.
+        /// </summary>
+        public static string AddPasswordMessage {
+            get {
+                return ResourceManager.GetString("AddPasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Password Successfully, You can login now.
+        /// </summary>
+        public static string ChangePasswordMessage {
+            get {
+                return ResourceManager.GetString("ChangePasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Email confirmed Successfully.
+        /// </summary>
+        public static string Confirm_Done {
+            get {
+                return ResourceManager.GetString("Confirm Done", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Email already confirmed.
+        /// </summary>
+        public static string Confirmed {
+            get {
+                return ResourceManager.GetString("Confirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You should type an email address.
         /// </summary>
         public static string Email {
@@ -79,11 +115,47 @@ namespace WoodyMovie.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If your email matched an existed account in out system, you should receive an email..
+        /// </summary>
+        public static string ReceiveEmail {
+            get {
+                return ResourceManager.GetString("ReceiveEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (0) is Required.
         /// </summary>
         public static string Required {
             get {
                 return ResourceManager.GetString("Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have to confirm your email to login.
+        /// </summary>
+        public static string RequireEmailConfirmation {
+            get {
+                return ResourceManager.GetString("RequireEmailConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset password completed successfully!.
+        /// </summary>
+        public static string ResetSuccessfully {
+            get {
+                return ResourceManager.GetString("ResetSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saved Successfully.
+        /// </summary>
+        public static string SuccessMessage {
+            get {
+                return ResourceManager.GetString("SuccessMessage", resourceCulture);
             }
         }
     }

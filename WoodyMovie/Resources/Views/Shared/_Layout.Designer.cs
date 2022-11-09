@@ -70,6 +70,33 @@ namespace WoodyMovie.Resources.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Account.
+        /// </summary>
+        public static string Account {
+            get {
+                return ResourceManager.GetString("Account", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hollywood, Los Angeles, California, United States.
+        /// </summary>
+        public static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All right reserved.
+        /// </summary>
+        public static string Allrightreserved {
+            get {
+                return ResourceManager.GetString("Allrightreserved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact Us.
         /// </summary>
         public static string Contact_Us {
@@ -79,11 +106,65 @@ namespace WoodyMovie.Resources.Views.Shared {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contact Information.
+        /// </summary>
+        public static string ContactInformation {
+            get {
+                return ResourceManager.GetString("ContactInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copyright.
+        /// </summary>
+        public static string Copyright {
+            get {
+                return ResourceManager.GetString("Copyright", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download Center.
+        /// </summary>
+        public static string DownloadCenter {
+            get {
+                return ResourceManager.GetString("DownloadCenter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to help.woody@gmail.com.
+        /// </summary>
+        public static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help Center.
+        /// </summary>
+        public static string HelpCenter {
+            get {
+                return ResourceManager.GetString("HelpCenter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Languages.
+        /// </summary>
+        public static string Languages {
+            get {
+                return ResourceManager.GetString("Languages", resourceCulture);
             }
         }
         
@@ -138,6 +219,51 @@ namespace WoodyMovie.Resources.Views.Shared {
         public static string Search {
             get {
                 return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to support@woody.com.
+        /// </summary>
+        public static string Support {
+            get {
+                return ResourceManager.GetString("Support", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Support Forum.
+        /// </summary>
+        public static string SupportForum {
+            get {
+                return ResourceManager.GetString("SupportForum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Twitter feed.
+        /// </summary>
+        public static string Twitterfeed {
+            get {
+                return ResourceManager.GetString("Twitterfeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Useful links.
+        /// </summary>
+        public static string Usefullink {
+            get {
+                return ResourceManager.GetString("Usefullink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Account.
+        /// </summary>
+        public static string UserAccount {
+            get {
+                return ResourceManager.GetString("UserAccount", resourceCulture);
             }
         }
     }

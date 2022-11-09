@@ -1,8 +1,8 @@
 ﻿body[dir=rtl], h1, h2, h3, h4, h5, h6 {
     font-family: 'Aref Ruqaa', serif !important;
 }
-div .card-title {
-    text-align: center;
+.card-title {
+    text-align: center !important;
 }
 .mu-navbar .navbar-brand {
     padding-left: 160px;
@@ -14,4 +14,10 @@ div .card-title {
 
 .navbar-collapse ul .nav-item a {
     font-size: 17px !important;
+}
+th {
+    text-align: right !important;
+}
+.mu-single-footer .list-unstyled li.media span {
+    margin-left: 10px;
 }

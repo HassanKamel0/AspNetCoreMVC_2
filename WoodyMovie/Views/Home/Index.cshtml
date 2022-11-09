@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Movie>
 @inject IViewLocalizer localizer
 <div class="container">
-	<form method="post" asp-controller="Movie" asp-action="Search" enctype="multipart/form-data">
+	<form method="post" asp-action="Search" asp-controller="Movie"  enctype="multipart/form-data">
 		<div class="form-group input-group input-group-lg mb-3 pt-2 col-md-6 ">
 			<input type="text" class="form-control" placeholder="@localizer["Search"]">
 			<button class="btn btn-secondary" type="submit">@localizer["Search"]</button>
@@ -33,7 +33,7 @@
 					</div>
 					</div>   *@
 						<div class="Download">
-							<a asp-action="Download" asp-controller="Movie" class="btn btn-primary form-control" asp-route-Id="@movie.Id">@localizer["Download"]</a>
+							<a target="_blank" asp-action="Download" asp-controller="Movie" class="btn btn-primary form-control" asp-route-Id="@movie.Id">@localizer["Download"]</a>
 						</div>
 					</div>
 				</div>

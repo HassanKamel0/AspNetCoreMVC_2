@@ -4,64 +4,63 @@
 @{
     ViewData["Title"] = Localizer["Login"];
 }
-	<main>
-		<!-- Start Contact -->
-		<section id="mu-contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-contact-area">
-							<!-- Title -->
-							<div class="row">
-								<div class="col-md-12">
-									<div class="mu-title">
-										<h2>@Localizer["Login"]</h2>
-									</div>
-								</div>
-							</div>
-								<!-- Start Contact Content -->
-							<div class="mu-contact-content">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="mu-contact-form-area">
-											<div id="form-messages"></div>
-											<form id="contact" method="post" class="mu-contact-form" asp-action="Login">
-												<div class="form-group">  
-													<span class="fa fa-envelope mu-contact-icon"></span>              
-													<input type="email" asp-for="Email" class="form-control" placeholder="@Localizer["Email"]" id="email" name="email" required>
-													<span asp-validation-for="Email" class="text-danger"></span>
-												</div>    
+<main>
+    <section id="mu-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-contact-area">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>@Localizer["Login"]</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mu-contact-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mu-contact-form-area">
+                                        <div id="form-messages"></div>
+                                        <form id="contact" method="post" class="mu-contact-form" asp-action="Login">
+                                            <div class="form-group">
+                                                <span class="fa fa-envelope mu-contact-icon"></span>
+                                                <input type="email" asp-for="Email" class="form-control" placeholder="@Localizer["Email"]" id="email" name="email" required>
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="fa fa-folder-open-o mu-contact-icon"></span>
+                                                <input type="password" asp-for="Password" class="form-control" placeholder="@Localizer["Password"]" id="Password" name="Password" required>
+                                                <span asp-validation-for="Password" class="text-danger"></span>
+                                            </div>
+                                            <button type="submit" class="mu-send-msg-btn"><span>@Localizer["Login"]</span></button>
+                                            <a class="mu-send-msg-btn" asp-controller="Home" asp-action="Index">@Localizer["Back"]</a>
+                                        </form>
+                                        <div class="col-md-12" style="padding-top:15px">
+                                            <a asp-action="ForgotPassword" asp-controller="Account">@Localizer["ForgotPassword"]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container pt-3 d-flex justify-content-around">
+                                    <div>
+                                        <a class="btn btn-outline-primary" asp-action="ExternalLogin" asp-route-provider="Facebook">@Localizer["Facebook"]</a>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-outline-danger" asp-action="ExternalLogin" asp-route-provider="Google">@Localizer["Google"]</a>
+                                    </div>
+                                </div>
 
-												<div class="form-group"> 
-													<span class="fa fa-folder-open-o mu-contact-icon"></span>                
-													<input type="password" asp-for="Password" class="form-control" placeholder="@Localizer["Password"]" id="Password" name="Password" required>
-													<span asp-validation-for="Password" class="text-danger"></span>
-												</div>
-												<button type="submit" class="mu-send-msg-btn"><span>@Localizer["Login"]</span></button>
-												<a class="mu-send-msg-btn" asp-controller="Home" asp-action="Index">@Localizer["Back"]</a>
-								        	</form>
-										</div>
-									</div>
-									<div class="pt-3 text-center" style="color:black">or Login with</div>
-									<div class="row pt-3 d-flex justify-content-between">
-										<div class="col-3">
-											<a class="btn btn-outline-primary" asp-action="ExternalLogin" asp-route-provider="Facebook">Facebook</a>
-										</div>
-										<div class="col-3">
-											<a class="btn btn-outline-danger" asp-action="ExternalLogin" asp-route-provider="Google">Google</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Contact Content -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Contact -->
-	</main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

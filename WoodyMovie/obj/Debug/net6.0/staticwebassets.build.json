@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "shso2oB4+OWMe7ghEN8FH3E0svCK5CzOTEdHYfp9cQ4=",
+  "Hash": "YBmWXC0wFUW4ejwgT9WRYbJCvY1mCpNkO/oixvVFFpo=",
   "Source": "WoodyMovie",
   "BasePath": "_content/WoodyMovie",
   "Mode": "Default",
@@ -1275,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\images\\movies\\041f6f32-07a3-42dd-b4d1-d3391579d859.jpg"
     },
     {
+      "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\0f59eb10-3502-404a-a036-aa2a3f8c1a62.png",
+      "SourceId": "WoodyMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\",
+      "BasePath": "_content/WoodyMovie",
+      "RelativePath": "images/movies/0f59eb10-3502-404a-a036-aa2a3f8c1a62.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\movies\\0f59eb10-3502-404a-a036-aa2a3f8c1a62.png"
+    },
+    {
       "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\1378c3bc-eab2-4e46-a15e-53c27ec8675f.png",
       "SourceId": "WoodyMovie",
       "SourceType": "Discovered",
@@ -1343,6 +1360,40 @@
       "OriginalItemSpec": "wwwroot\\images\\movies\\21526e2d-4b3c-4722-9890-98521c81b5d3.jpg"
     },
     {
+      "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\3d36150d-e353-4f85-bfb3-939637accf37.jpg",
+      "SourceId": "WoodyMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\",
+      "BasePath": "_content/WoodyMovie",
+      "RelativePath": "images/movies/3d36150d-e353-4f85-bfb3-939637accf37.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\movies\\3d36150d-e353-4f85-bfb3-939637accf37.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\3da66147-e975-481f-9388-636f551ccc5e.jpg",
+      "SourceId": "WoodyMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\",
+      "BasePath": "_content/WoodyMovie",
+      "RelativePath": "images/movies/3da66147-e975-481f-9388-636f551ccc5e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\movies\\3da66147-e975-481f-9388-636f551ccc5e.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\41637a29-a41b-4490-a858-801383b3f120.jpg",
       "SourceId": "WoodyMovie",
       "SourceType": "Discovered",
@@ -1394,6 +1445,23 @@
       "OriginalItemSpec": "wwwroot\\images\\movies\\64b84331-bb3b-4f37-8349-19e80e579da2.jpg"
     },
     {
+      "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\78915d9f-3a10-464d-993c-d4613ca82655.jpg",
+      "SourceId": "WoodyMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\",
+      "BasePath": "_content/WoodyMovie",
+      "RelativePath": "images/movies/78915d9f-3a10-464d-993c-d4613ca82655.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\movies\\78915d9f-3a10-464d-993c-d4613ca82655.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\8624bd9f-90ce-4121-a605-2af97d2657b3.jpg",
       "SourceId": "WoodyMovie",
       "SourceType": "Discovered",
@@ -1426,6 +1494,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\movies\\9cb56273-aaf2-4b09-8125-e8bfeaf0c5ab.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\b1e95159-56d5-4dda-ac6e-c8fbe2a48072.jpg",
+      "SourceId": "WoodyMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\",
+      "BasePath": "_content/WoodyMovie",
+      "RelativePath": "images/movies/b1e95159-56d5-4dda-ac6e-c8fbe2a48072.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\movies\\b1e95159-56d5-4dda-ac6e-c8fbe2a48072.jpg"
     },
     {
       "Identity": "C:\\Users\\hassa\\source\\repos\\WoodyMovie\\WoodyMovie\\wwwroot\\images\\movies\\c5f1828b-d5f0-4719-aa17-04cfb751298b.jpg",

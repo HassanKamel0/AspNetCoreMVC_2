@@ -12,8 +12,16 @@ builder.Services.AddControllersWithViews().AddViewLocalization(op=>op.ResourcesP
 builder.Services.AddMvc().AddViewLocalization(op => op.ResourcesPath = "Resources").AddDataAnnotationsLocalization();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false).AddDefaultTokenProviders()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.SignIn.RequireConfirmedEmail = true;
+ }).AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
+{
+    options.TokenLifespan = TimeSpan.FromHours(3);
+});
 builder.Services.AddTransient<IMailHelper, MailHelper>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddAutoMapper(typeof(Program));

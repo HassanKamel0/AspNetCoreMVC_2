@@ -66,7 +66,7 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+                                <a class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@Localizer["Account"]</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a asp-area="" asp-controller="Account" asp-action="Info">@User.Identity.Name</a>
                                     <a asp-area="" asp-controller="Account" asp-action="Logout">@Localizer["Logout"]</a>
@@ -109,6 +109,18 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success text-center">
+                    <h4>@TempData["Success"]</h4>
+                </div>
+            }
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger text-center">
+                    <h4>@TempData["Error"]</h4>
+                </div>
+            }
             @RenderBody()
         </main>
     </div>
@@ -128,7 +140,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="mu-single-footer">
-                            <img class="mu-footer-logo" src="~/assets/images/logo.png" alt="logo">
+                            <h4>Woody Movie</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
                             <div class="mu-social-media">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -141,20 +153,18 @@
                     </div>
                     <div class="col-md-3">
                         <div class="mu-single-footer">
-                            <h3>Twitter feed</h3>
+                            <h3>@Localizer["Twitterfeed"]</h3>
                             <ul class="list-unstyled">
                                 <li class="media">
                                     <span class="fa fa-twitter"></span>
                                     <div class="media-body">
                                         <p><strong>Woody Movie</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        <a href="#">2 hours ago</a>
                                     </div>
                                 </li>
                                 <li class="media">
                                     <span class="fa fa-twitter"></span>
                                     <div class="media-body">
                                         <p><strong>Woody Movie</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        <a href="#">2 hours ago</a>
                                     </div>
                                 </li>
                             </ul>
@@ -162,28 +172,28 @@
                     </div>
                     <div class="col-md-3">
                         <div class="mu-single-footer">
-                            <h3>Languages</h3>
+                            <h3>@Localizer["Languages"]</h3>
                             <ul class="mu-useful-links">
                                 <li><a href="/Home/SetLang?Lang=ar-SA&ReturnUrl=@Context.Request.Path.Value">العربية</a></li>
                                 <li><a href="/Home/SetLang?Lang=en-US&ReturnUrl=@Context.Request.Path.Value">English</a></li>
                             </ul>
-                            <h3>Useful link</h3>
+                            <h3>@Localizer["Usefullink"]</h3>
                             <ul class="mu-useful-links">
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Download Center</a></li>
-                                <li><a href="#">User Account</a></li>
-                                <li><a href="#">Support Forum</a></li>
+                                <li><a href="#">@Localizer["HelpCenter"]</a></li>
+                                <li><a href="#">@Localizer["DownloadCenter"]</a></li>
+                                <li><a href="#">@Localizer["UserAccount"]</a></li>
+                                <li><a href="#">@Localizer["SupportForum"]</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="mu-single-footer">
-                            <h3>Contact Information</h3>
+                            <h3>@Localizer["ContactInformation"]</h3>
                             <ul class="list-unstyled">
                                 <li class="media">
                                     <span class="fa fa-home"></span>
                                     <div class="media-body">
-                                        <p>349 Main St, Deseronto, ON K0K 1X0, Canada</p>
+                                        <p>@Localizer["Address"]</p>
                                     </div>
                                 </li>
                                 <li class="media">
@@ -196,8 +206,8 @@
                                 <li class="media">
                                     <span class="fa fa-envelope"></span>
                                     <div class="media-body">
-                                        <p>support@bhero.com</p>
-                                        <p>help.behero@gmail.com</p>
+                                        <p>@Localizer["Support"]</p>
+                                        <p>@Localizer["Help"]</p>
                                     </div>
                                 </li>
                             </ul>
@@ -211,7 +221,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mu-footer-bottom-area">
-                            <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+                            <p class="mu-copy-right">&copy; @Localizer["Copyright"] <a rel="nofollow" href="http://markups.io">markups.io</a>. @Localizer["Allrightreserved"].</p>
                         </div>
                     </div>
                 </div>

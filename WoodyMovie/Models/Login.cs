@@ -15,4 +15,31 @@ namespace WoodyMovie.Models
         // [StringLength(maximumLength:30,MinimumLength =5)]
         public string Password { get; set; }
     }
+    public class ForgotPasswordVM
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+    }
+    public class VerifyResetPasswordVM
+    {
+        [Required]
+        public string Token { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+    }
+    public class ResetPasswordVM
+    {
+        [Required]
+        public string NewPassword { get; set; }
+        [Required]
+        [Compare("NewPassword")]
+        public string ConfirmPassword { get; set; }
+        [Required]
+        public string Token { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+    }
 }

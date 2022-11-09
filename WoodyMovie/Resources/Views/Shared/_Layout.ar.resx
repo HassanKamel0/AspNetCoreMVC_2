@@ -120,11 +120,38 @@
   <data name="About" xml:space="preserve">
     <value>عنا</value>
   </data>
+  <data name="Account" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>هوليوود، لوس أنجلوس، كاليفورنيا، الولايات المتحدة‭</value>
+  </data>
+  <data name="Allrightreserved" xml:space="preserve">
+    <value>كل الحقوق محفوظة</value>
+  </data>
   <data name="Contact Us" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
+  <data name="ContactInformation" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>حقوق النشر</value>
+  </data>
+  <data name="DownloadCenter" xml:space="preserve">
+    <value>مركز التحميل</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>help.woody@gmail.com</value>
+  </data>
+  <data name="HelpCenter" xml:space="preserve">
+    <value>مركز المساعدة</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>الرئيسية</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>اللغات</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>تسجيل دخول</value>
@@ -143,5 +170,20 @@
   </data>
   <data name="Search" xml:space="preserve">
     <value>بحث</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>support@woody.com</value>
+  </data>
+  <data name="SupportForum" xml:space="preserve">
+    <value>منتدى الدعم</value>
+  </data>
+  <data name="Twitterfeed" xml:space="preserve">
+    <value>آراء تويتر</value>
+  </data>
+  <data name="Usefullink" xml:space="preserve">
+    <value>روابط مفيدة</value>
+  </data>
+  <data name="UserAccount" xml:space="preserve">
+    <value>حساب المستخدم</value>
   </data>
 </root>

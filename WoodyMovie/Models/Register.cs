@@ -32,4 +32,31 @@ namespace WoodyMovie.Models
         [Required]
         public string LastName { get; set; }
     }
+    public class ChangePasswordVM
+    {
+        [Required]
+        public string CurrentPassword { get; set; }
+        [Required]
+        [StringLength(maximumLength: 30, MinimumLength = 5)]
+        public string NewPassword { get; set; }
+        [Compare("NewPassword")]
+        public string ConfirmNewPassword { get; set; }
+    }
+    public class AddPasswordVM
+    {
+        [Required]
+        [DataType(DataType.Password)]
+        [StringLength(maximumLength: 30, MinimumLength = 5)]
+        public string Password { get; set; }
+
+    }
+    public class ConfirmEmailVM
+    {
+        [Required]
+        public string Token { get; set; }
+        [Required]
+        public string UserID { get; set; }
+
+    }
+    
 }

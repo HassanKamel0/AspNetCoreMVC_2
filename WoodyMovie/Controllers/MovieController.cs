@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using WoodyMovie.Data;
 using WoodyMovie.Models;
@@ -11,13 +12,11 @@ namespace WoodyMovie.Controllers
     public class MovieController : Controller
     {
         private readonly IMovieRepository Imovie;
-        private readonly ApplicationDbContext db;
         private readonly IWebHostEnvironment hostEnvironment;
 
-        public MovieController(IMovieRepository Imovie,ApplicationDbContext db, IWebHostEnvironment hostEnvironment)
+        public MovieController(IMovieRepository Imovie, IWebHostEnvironment hostEnvironment)
         {
             this.Imovie = Imovie;
-            this.db = db;
             this.hostEnvironment = hostEnvironment;
         }
         public IActionResult Index()
@@ -100,22 +99,21 @@ namespace WoodyMovie.Controllers
             Imovie.Save();
             return RedirectToAction("Index");
         }
-        //[HttpGet]
-        //[ValidateAntiForgeryToken]
-        //public IActionResult Download(int id)
-        //{
-        //    var movie = db.Movies.Find(id);
-        //    if (movie == null)
-        //        return NotFound();
-        //    movie.DownloadCount++;
-        //    db.Update(movie);
-        //    db.SaveChanges();
-        //    var path = "~/images/movies/" + movie.Name;
-        //    Response.Headers.Add("Expires", DateTime.Now.AddDays(-3).ToLongDateString());
-        //    Response.Headers.Add("Cache-Control", "no-cache");
-        //    return File(path,movie.ImageUrl, movie.Name);
-        //}
-
+        [HttpGet]
+        public async Task<IActionResult> Download(int id)
+        {
+            var movie = await Imovie.FindAsync(id);
+            if (movie == null)
+                return NotFound();
+            movie.DownloadCount++;
+            Imovie.Update(movie);
+            Imovie.Save();
+            var extension = Path.GetExtension(movie.ImageUrl);
+            extension = (extension == ".jpg" ? "jpg" : "png").ToString();
+            Response.Headers.Add("Expires", DateTime.Now.AddDays(-3).ToLongDateString());
+            Response.Headers.Add("Cache-Control", "no-cache");
+            return File(movie.ImageUrl, "image/"+extension, movie.Name); //path, contentType, name
+        }
         [HttpPost]
         public IActionResult Search(string name)
         {

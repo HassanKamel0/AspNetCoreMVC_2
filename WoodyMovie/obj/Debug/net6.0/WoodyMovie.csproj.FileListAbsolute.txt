@@ -285,3 +285,15 @@ C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\bin\Debug\net6.0\AutoMapper.dl
 C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.Info.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.Info.ar.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account._ChangePasswordPartial.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account._ChangePasswordPartial.ar.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account._AddPasswordPartial.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account._AddPasswordPartial.ar.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.ForgotPassword.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.ResetPassword.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.ForgotPassword.ar.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Account.ResetPassword.ar.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Movie.Index.resources
+C:\Users\hassa\source\repos\WoodyMovie\WoodyMovie\obj\Debug\net6.0\WoodyMovie.Resources.Views.Movie.Index.ar.resources

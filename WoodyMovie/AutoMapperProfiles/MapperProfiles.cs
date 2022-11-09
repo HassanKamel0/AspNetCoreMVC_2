@@ -14,8 +14,8 @@ namespace WoodyMovie.AutoMapperProfiles
     {
         public UserProfile()
         {
-            CreateMap<Models.UserViewModel, Data.ApplicationUser>();
-            CreateMap<Data.ApplicationUser, Models.UserViewModel>();
+            CreateMap<Data.ApplicationUser, Models.UserViewModel>()
+                .ForMember(u=>u.HasPassword,op=>op.MapFrom(u=>u.PasswordHash!=null));
         }
     }
 }

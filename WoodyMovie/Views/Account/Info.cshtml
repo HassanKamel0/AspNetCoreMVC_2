@@ -1,39 +1,71 @@
-﻿@model WoodyMovie.Data.ApplicationUser
-
+﻿@model UserViewModel
+@inject IViewLocalizer Localizer
 @{
-	ViewData["Title"]="Info";
+    ViewData["Title"] = Localizer["Info"];
 }
-<h2>Info</h2>
-<div class="col-4">
-			<hr />
-			<div class="row">
-				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-				<div class="form-group">
-					<label asp-for="@Model.FirstName" class="control-label"></label>
-					<input asp-for="@Model.FirstName" class="form-control" />
-					<span asp-validation-for="@Model.FirstName" class="text-danger"></span>
-				</div>
-				<div class="form-group">
-					<label asp-for="@Model.LastName" class="control-label"></label>
-					<input asp-for="@Model.LastName" class="form-control" />
-					<span asp-validation-for="@Model.LastName" class="text-danger"></span>
-				</div>
-				<div class="form-group">
-					<label asp-for="@Model.Email" class="control-label"></label>
-					<input asp-for="@Model.Email" class="form-control" />
-					<span asp-validation-for="@Model.Email" class="text-danger"></span>
-				</div>
-				<div class="form-group">
-					<label asp-for="@Model.PhoneNumber" class="control-label"></label>
-					<input asp-for="@Model.PhoneNumber" class="form-control" />
-					<span asp-validation-for="@Model.PhoneNumber" class="text-danger"></span>
-				</div>
-			</div>
-			<div class="form-group pt-2">
-					<button type="submit" class="btn btn-primary">Save</button>
-					<a asp-action="Index" class="btn btn-secondary">Back</a>
-				</div>
-		</div>
-<br>
-<h2>Manage</h2>
-<a class="btn btn-outline-primary"> Change Password</a>
+
+@if (!ViewContext.ModelState.IsValid)
+{
+    <div asp-validation-summary="ModelOnly" class="text-danger alert alert-danger text-center"></div>
+}
+<main>
+    <section id="mu-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-contact-area">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>@Localizer["Info"]</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mu-contact-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mu-contact-form-area">
+                                        <div id="form-messages"></div>
+                                        <form id="contact" method="post" class="mu-contact-form" asp-action="Register">
+                                            <div class="form-group">
+                                                <span class="fa fa-envelope mu-contact-icon"></span>
+                                                <input type="email" asp-for="Email" class="form-control" placeholder="@Localizer["Email"]" id="email" name="email" required readonly>
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span><i class="fa fa-user mu-contact-icon"></i></span>
+                                                <input type="text" asp-for="@Model.FirstName" class="form-control" placeholder="@Localizer["FirstName"]" id="firstName" name="firstName" required>
+                                                <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span><i class="fa fa-user mu-contact-icon"></i></span>
+                                                <input type="text" asp-for="LastName" class="form-control" placeholder="@Localizer["LastName"]" id="lastName" name="lastName" required>
+                                                <span asp-validation-for="LastName" class="text-danger"></span>
+                                            </div>
+                                            <button asp-action="Info" type="submit" class="mu-send-msg-btn"><span>@Localizer["Submit"]</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@if (Model.HasPassword)
+{
+    <partial name="_ChangePasswordPartial" model="new ChangePasswordVM()"/>
+}
+else
+{
+    <partial name="_AddPasswordPartial" model="new AddPasswordVM()"/>
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

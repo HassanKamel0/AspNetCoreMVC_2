@@ -42,7 +42,7 @@ body,
 html {
     overflow-x: hidden;
 }
-div .card-title {
+.card-title{
     text-align: center !important;
 }
 body {

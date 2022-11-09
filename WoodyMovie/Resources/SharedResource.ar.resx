@@ -117,13 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddPasswordMessage" xml:space="preserve">
+    <value>تم اضافة كلمة السر بنجاح</value>
+  </data>
+  <data name="ChangePasswordMessage" xml:space="preserve">
+    <value>تم تغيير كلمة السر بنجاح , يمكنك تسجيل الدخول الآن</value>
+  </data>
+  <data name="Confirm Done" xml:space="preserve">
+    <value>تم تفعيل بريدك الالكتروني بنجاح</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>بريدك الالكتروني مفعل بالفعل</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>يجب إدخال البريد الالكتروني</value>
   </data>
   <data name="EmailLabel" xml:space="preserve">
     <value>البريد الالكتروني</value>
   </data>
+  <data name="ReceiveEmail" xml:space="preserve">
+    <value>اذا كان بريدك الالكتروني موجوداً سيرسل لك ايميل</value>
+  </data>
   <data name="Required" xml:space="preserve">
     <value>(0) مطلوب</value>
+  </data>
+  <data name="RequireEmailConfirmation" xml:space="preserve">
+    <value>يجب تفعيل بريدك الالكتروني لتتمكن من تسجيل الدخول</value>
+  </data>
+  <data name="ResetSuccessfully" xml:space="preserve">
+    <value>تم استرجاع كلمة السر بنجاح</value>
+  </data>
+  <data name="SuccessMessage" xml:space="preserve">
+    <value>تم الحفظ بنجاح</value>
   </data>
 </root>

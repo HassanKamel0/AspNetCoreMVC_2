@@ -123,6 +123,15 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Sign in with Facebook</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>Sign in with Google</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
   </data>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WoodyMovie.Resources {
+namespace WoodyMovie {
     using System;
     
     

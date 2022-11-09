@@ -117,13 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddPasswordMessage" xml:space="preserve">
+    <value>Password added Successfully</value>
+  </data>
+  <data name="ChangePasswordMessage" xml:space="preserve">
+    <value>Change Password Successfully, You can login now</value>
+  </data>
+  <data name="Confirm Done" xml:space="preserve">
+    <value>Your Email confirmed Successfully</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Your Email already confirmed</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>You should type an email address</value>
   </data>
   <data name="EmailLabel" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="ReceiveEmail" xml:space="preserve">
+    <value>If your email matched an existed account in out system, you should receive an email.</value>
+  </data>
   <data name="Required" xml:space="preserve">
     <value>(0) is Required</value>
+  </data>
+  <data name="RequireEmailConfirmation" xml:space="preserve">
+    <value>You have to confirm your email to login</value>
+  </data>
+  <data name="ResetSuccessfully" xml:space="preserve">
+    <value>Reset password completed successfully!</value>
+  </data>
+  <data name="SuccessMessage" xml:space="preserve">
+    <value>Saved Successfully</value>
   </data>
 </root>
